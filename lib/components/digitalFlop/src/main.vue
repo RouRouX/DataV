@@ -151,6 +151,8 @@ export default {
     update () {
       const { mergeConfig, mergeShape, getShape, getStyle, graph, mergedConfig } = this
 
+      graph.animationEnd()
+
       mergeConfig()
 
       if (!graph) return
